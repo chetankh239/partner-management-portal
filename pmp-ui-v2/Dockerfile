@@ -12,7 +12,7 @@ ENV REACT_APP_POLICY_MANAGER_API_BASE_URL $REACT_APP_POLICY_MANAGER_API_BASE_URL
 ENV PUBLIC_URL=_PUBLIC_URL_
 
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 # Copy the working directory
 COPY . ./
 RUN npm run build
